@@ -20,7 +20,7 @@ button.onclick = function(){
   }
   else{
     const answer = Number(textbox.value);
-    if(isNan(answer)){
+    if(isNaN(answer)){
       description.textContent = "Please only enter a number";
     }
     else if(answer > 100 || answer < 1){
@@ -29,11 +29,11 @@ button.onclick = function(){
     else if(answer < random ){
       guess++;
       description.textContent = "Too Low!";
-  }
+    }
     else if(answer > random ){
       guess++;
       description.textContent = "Too High!";
-  }
+    }
     else {
       description.textContent = "🎊Congratulation you guess the correct number!!🎊";
       randomnumber.textContent = random;
@@ -50,4 +50,5 @@ button.onclick = function(){
 
       playing = true;
     }
+  }
 }
