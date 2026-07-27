@@ -3,17 +3,17 @@ let randomnumber = document.getElementById("number");
 let textbox = document.getElementById("boxanswer");
 const button = document.getElementById("playbtn");
 let playing = true;
-let geuss;
-const max-guess = 10;
+let guess;
+const maxGuess = 10;
 let random;
 
 button.onclick = function(){
   if(playing == true){
     random = Math.floor(Math.random() * 100) + 1;
-    boxanswer.style.display = "block";
-    playbtn.textContent = "Guess";
-    readme.textContent = "Guess a number from 1 to 100";
-    playbtn.textContent = "Guess";
+    textbox.style.display = "block";
+    button.textContent = "Guess";
+    description.textContent = "Guess a number from 1 to 100";
+    button.textContent = "Guess";
     guess = 0;
 
     playing = false;
@@ -42,11 +42,11 @@ button.onclick = function(){
 
       playing = true;
     }
-    if(guess === maxguess){
+    if(guess === maxGuess){
       desciption.textContent = "You've reach the maximum of 10 guesses! The number is";
       randomnumber.textContent = random;
       button.textContent = "Play Again";
-      boxanswer.style.display = "none";
+      textbox.style.display = "none";
 
       playing = true;
 }
