@@ -41,6 +41,7 @@ button.onclick = function(){
       button.textContent = "Play Again";
 
       playing = true;
+      return;
     }
     if(guess === maxGuess){
       description.textContent = "You've reach the maximum of 10 guesses! The number is";
@@ -49,6 +50,7 @@ button.onclick = function(){
       textbox.style.display = "none";
 
       playing = true;
+      return;
     }
   }
 }
