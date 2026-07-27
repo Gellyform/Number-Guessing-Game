@@ -8,7 +8,7 @@ const maxGuess = 10;
 let random;
 
 button.onclick = function(){
-  if(playing == true){
+  if(playing){
     random = Math.floor(Math.random() * 100) + 1;
     textbox.style.display = "block";
     button.textContent = "Guess";
