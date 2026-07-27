@@ -37,7 +37,7 @@ button.onclick = function(){
     else {
       description.textContent = "🎊Congratulation you guess the correct number!!🎊";
       randomnumber.textContent = random;
-      textbox.style.diplay = "none";
+      textbox.style.display = "none";
       button.textContent = "Play Again";
 
       playing = true;
